@@ -115,7 +115,7 @@ export const getWeather = async (province, city) => {
     console.error('配置文件中找不到相应的省份或城市')
     return {}
   }
-  const url = `http://yangshaobo.top:8080/api/weather/city/${cityInfo.city_code}`
+  const url = `http://t.weather.itboy.net/api/weather/city/${cityInfo.city_code}`
 
   const res = await axios.get(url, {
     headers: {
